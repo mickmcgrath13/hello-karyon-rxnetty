@@ -1,7 +1,11 @@
 FROM openjdk:8-jre
 
+# set up arg for app version
+ARG APP_VERSION
+ENV APP_VERSION=$APP_VERSION
+
 # set maintainer
-LABEL maintainer "miiro@getintodevops.com"
+LABEL maintainer "mick_mcgrath2@apple.com"
 
 RUN useradd --home-dir /home/hkr --create-home -U hkr
 USER hkr
