@@ -50,6 +50,6 @@ public class HelloEndpointTest {
 
         Observable<String> hello = helloEndpoint.getHelloName(request);
 
-        Assert.assertEquals("Hello, name! This is a test (1-4).", hello.toBlocking().first());
+        Assert.assertEquals("Yo, name! This is a test (0.2.4).", hello.toBlocking().first());
     }
 }
